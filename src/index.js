@@ -7,7 +7,6 @@ import RouterConfig from "./router/index.js";
 ReactDOM.render(
   <React.StrictMode>
 <RouterConfig />
-
   </React.StrictMode>,
   document.getElementById('root')
 );

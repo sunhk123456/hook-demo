@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
 
-const initialState = 0;
+// const initialState = 0;
 const myContext = React.createContext();
 
 function reducer(state, action) {

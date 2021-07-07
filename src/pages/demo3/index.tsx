@@ -1,25 +1,23 @@
 import React, {useState, useEffect, } from 'react';
-
+// import {ThemeContext} from '../../component/button/index'
+// useContext
 const Demo :React.FC= () => {
 const [a]=useState<boolean>(false);
 const [count,setCount]=useState<number>(0);
     useEffect(()=>{
         console.log("123")
     })
-
-  const  clickH1=():string=>{
+    console.log("1231 ")
+    const  clickH1=():string=>{
         setCount(count+2)
       return "123"
     }
-
     const table=(a:number):object|string=>{
-        // console.log("123333",t)
         if (a%5===1){
             return (<h5 >123</h5>)
 
         }else if (a%5===3){
             return "123"
-            // return (<div>1231111</div>)
         }else {
             return (<h1>555</h1>)
         }
