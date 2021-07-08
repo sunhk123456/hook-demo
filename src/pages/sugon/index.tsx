@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react'
 import {getList, msgState} from "./api/sugonApi";
 
-const Example: React.FC<any> = () => {
+const Example: React.FC<any> = () => { //FC尖括号里面如果父组件传下来有props如name 可写const Example: React.FC<{name:string}> = () => {
     // 声明一个新的叫做 “count” 的 state 变量
     const [count, setCount] = useState<number>(0);
     const [count2, setCount2] = useState<string>("");
@@ -13,7 +13,7 @@ const Example: React.FC<any> = () => {
     });
     useEffect(() => {
         console.log("只在页面第一次加载的时候触发一次")
-        document.title = `中科曙光react前端`;
+        document.title = `中科react前端`;
         //请求getList接口 传入参数yes   res是传回来的数据
         getList("yes").then((res: msgState[]) => {
             setMsg(res)

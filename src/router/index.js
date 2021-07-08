@@ -11,6 +11,7 @@ import Reducer from '../pages/reducer'
 import Ref from '../pages/ref/index'
 import Mome from '../pages/memo/fater'
 import sugon from '../pages/sugon'
+import interval from '../pages/interval'  //定时器
 import reducerContext from '../pages/reducerContext'
 import {Router,Route,Switch,Redirect} from 'react-router-dom';
 import { createHashHistory } from "history";
@@ -36,6 +37,7 @@ class RouterConfig extends React.Component{
                     <Route path='/Mome' component={Mome}/>
                     <Route path='/reducerContext' component={reducerContext}/>
                     <Route path='/sugon' component={sugon}/>
+                    <Route path='/interval' component={interval}/>
                 </Switch>
             </Router>
         )

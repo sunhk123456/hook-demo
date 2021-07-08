@@ -5,9 +5,25 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import RouterConfig from "./router/index.js";
 ReactDOM.render(
-  <React.StrictMode>
-<RouterConfig />
-  </React.StrictMode>,
+<div>
+  <div style={{position:"absolute",width:"200px",background:"rgba(0,0,0,0.1)",height:"100%",}}>
+    <ul >
+      <li><a href="#/Demo2">demo2  </a></li>
+      <li><a href="#/sugon">sugon  </a></li>
+      <li><a href="#/App">App  </a></li>
+      <li><a href="#/Demo3">Demo3  </a></li>
+      <li><a href="#/Page1">Page1  </a></li>
+      <li><a href="#/context">context  </a></li>
+    </ul>
+
+  </div>
+
+  <div style={{marginLeft:"220px",paddingTop:"20px"}}>
+    <React.StrictMode>
+      <RouterConfig />
+    </React.StrictMode>
+  </div>
+</div>,
   document.getElementById('root')
 );
 
